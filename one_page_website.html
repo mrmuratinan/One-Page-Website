@@ -16,76 +16,154 @@
   <head>
     <title>One Page Website Assignmnet</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">    
   </head>
   <body>
     <!-- NAV -->
     <div>
       <div>
-          <ul>
-              <a href="#home" id="link"><li>HOME</li></a>
-              <a href="#photos"><li>PHOTOS</li></a>
-              <a href="#videos"><li>VIDEOS</li></a>
-              <a href="#contact"><li>CONTACT</li></a>
-          </ul>
+        <ul>
+          <a href="#home" id="link"><li>HOME</li></a>
+          <a href="#photos"><li>PHOTOS</li></a>
+          <a href="#videos"><li>VIDEOS</li></a>
+          <a href="#contact"><li>CONTACT</li></a>
+          <a href="#map"><li>MAP</li></a>
+        </ul>
       </div>
     </div>
     <!-- END NAV -->
 
     <!-- HOME -->
     <div id="home">
-      <div>
-        <div>
-          <span>The Space Station</span>
-        </div>
-      </div>
+      <h1><b>My Beautiful Park</b></h1>
     </div>
     <!-- END HOME -->
   
     <!-- PHOTOS -->
     <section>
       <div id="photos">
-        <h1>Gallery</h1>
-        <div>
+        <h1>Photo Gallery</h1>
+        <div class="row">
 
           <!-- PHOTO CONTAINER 1 -->
-           <div>
-            <div>
-              <img src="./images/Thumb/tumbnail_1.jpg" alt="tumbnail_1.jpg" height="400" width="400">
+            <div class="column">
+              <img src="./images/Thumbs/thumb_park_1.jpg" alt="tumbnail_1.jpg" height="400" width="400">
               <div>
-                <h3>Click to Enlarge</h3>
-                <p>We have several space launches departing daily, book your flight today!</p>
+                <p>East section of our park</p>
               </div>
             </div>
-           </div>
           <!-- END PHOTO CONTAINER 1 -->
 
+          <!-- PHOTO CONTAINER 2 -->         
+            <div class="column">
+              <img src="./images/Thumbs/thumb_park_2.jpg" alt="tumbnail_1.jpg" height="400" width="400">
+              <div>
+                <p>A lot to enjoy the peace and calm environement</p>
+              </div>
+            </div>
+          <!-- END PHOTO CONTAINER 2 -->
+
         </div>
+
+        <div class="row">
+
+          <!-- PHOTO CONTAINER 3 -->
+            <div class="column">
+              <img src="./images/Thumbs/thumb_park_3.jpg" alt="tumbnail_1.jpg" height="400" width="400">
+              <div>
+                <p>East section of our park</p>
+              </div>
+            </div>
+          <!-- END PHOTO CONTAINER 3 -->
+
+          <!-- PHOTO CONTAINER 4 -->         
+            <div class="column">
+              <img src="./images/Thumbs/thumb_park_4.jpg" alt="tumbnail_1.jpg" height="400" width="400">
+              <div>
+                <p>A lot to enjoy the peace and calm environement</p>
+              </div>
+            </div>
+          <!-- END PHOTO CONTAINER 4 -->
+
+        </div>
+
+
       </div>
     </section>
     <!-- END PHOTOS -->
 
     <!-- VIDEOS -->
     <section>
-      <div id="photos">
-        <h1>Gallery</h1>
+      <div id="videos">
+        <h1>Adventure videos</h1>
         <div>
 
           <!-- VIDEO CONTAINER 1 -->
            <div>
             <div>
-              <img src="./images/Thumb/tumbnail_1.jpg" alt="tumbnail_1.jpg" height="400" width="400">
+              <video width="320" height="240" controls>
+                <source src="./videos/waterfall.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
               <div>
-                <h3>Click to Enlarge</h3>
-                <p>We have several space launches departing daily, book your flight today!</p>
+                <p>A lot to discover</p>
               </div>
             </div>
            </div>
           <!-- END VIDEO CONTAINER 1 -->
 
+          <!-- VIDEO CONTAINER 2 -->
+          <div>
+            <div>
+              <video width="320" height="240" controls>
+                <source src="./videos/creek.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+              <div>
+                <p>Peaceful dreams</p>
+              </div>
+            </div>
+           </div>
+          <!-- END VIDEO CONTAINER 2 -->
+
         </div>
       </div>
     </section>
     <!-- END VIDEOS -->
+
+    <!-- CONTACT -->
+    <section>
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>
+          <b>Please provide us with your basic contact information.</b>
+        </p>
+        <div>
+          <form action="" method="post">
+            <input class="rsvp" type="text" value="First Name"><br/><br/>
+            <input class="rsvp" type="text" value="Last Name"><br/><br/>
+            <input class="rsvp" type="text" value="Email Address"><br/><br/>
+            <input class="rsvp" type="text" value="Phone Number"><br/><br/>
+            <div>
+              <input type="submit" value="Submit"><br/><br/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTACT-->
+
+    <!-- MAP -->
+    <div id="map">
+      <p><br><br><h2>MAP</h2><br><b>How to find us?</b><br></p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6857.0896413315!2d-79.36202893149773!3d43.73026636025765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1726968060818!5m2!1sen!2sca" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <!-- END MAP --> 
+
+
+
+
+
 
     <footer>
       <p>Murat Inan &copy;2024</p>
