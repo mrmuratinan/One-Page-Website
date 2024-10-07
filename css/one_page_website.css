@@ -19,3 +19,10 @@ body {
 	clear: both;
 	display: table;
 }
+
+.rsvp {
+	width: 30%;
+	margin: 5px;
+	border: 1px solid blue;
+	border-radius: 3px;
+}
